@@ -22,7 +22,7 @@ function App() {
       ></Nav>
       <main>
         <About></About>
-        <Portfolio></Portfolio>
+        <Portfolio currentCategory={currentCategory}></Portfolio>
         <Footer></Footer>
       </main>
     </div>
