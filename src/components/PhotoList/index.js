@@ -45,13 +45,13 @@ const PhotoList = ({ category }) => {
           description: 'p6 description',
         },
 
-        {
-          name: 'Photo',
-          category: 'About Me',
-          web: "",
-          repo: "",
-          description: 'p6 description',
-        }
+        // {
+        //   name: 'Photo',
+        //   category: 'About Me',
+        //   web: "",
+        //   repo: "",
+        //   description: 'p6 description',
+        // }
       ]);
 
     const currentPhotos = photos.filter((photo) => photo.category === category);
