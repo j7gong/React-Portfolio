@@ -66,6 +66,8 @@ GIVEN a single-page application portfolio for a web developer
 
 ## **Website**
 
+https://j7gong.github.io/react-portfolio/
+
 ## **Contribution** 
 
 Made with by ❤️ Jingsi Gong
