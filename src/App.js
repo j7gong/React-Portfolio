@@ -4,17 +4,16 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio";
 import ContactForm from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
   const [categories] = useState([
-    // { name: "About Me", description: "port 1 description" },
     { name: "Portfolio", description: "port 2 description" },
-    // { name: "Contact", description: "port 3 description" },
     { name: "Resume", description: "port 4 description" },
     ]);
   
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
+// categories[0]
   const [contactSelected, setContactSelected] = useState(false);
 
   return (
@@ -27,16 +26,11 @@ function App() {
         setContactSelected={setContactSelected}
       ></Nav>
       <main>
-        {/* <Portfolio currentCategory={currentCategory}></Portfolio>
-        <About></About>
-        <ContactForm></ContactForm>
-        
-        <Footer></Footer> */}
-
         {!contactSelected ? (
           <>
             <About></About>
             <Portfolio currentCategory={currentCategory}></Portfolio>
+            <Resume></Resume>
             <Footer></Footer>
           </>
         ) : (
