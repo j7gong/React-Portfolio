@@ -43,11 +43,19 @@ const PhotoList = ({ category }) => {
           web: "https://j7gong.github.io/week3Challenge/",
           repo: "https://github.com/j7gong/week3Challenge",
           description: 'p6 description',
+        },
+
+        {
+          name: 'Photo',
+          category: 'About Me',
+          web: "",
+          repo: "",
+          description: 'p6 description',
         }
       ]);
 
     const currentPhotos = photos.filter((photo) => photo.category === category);
-
+    
     return (
         <div>
             <div className="flex-row">
@@ -59,6 +67,7 @@ const PhotoList = ({ category }) => {
                     key={image.name}
                 />
                 ))}
+                
             </div>
         </div>
     )
