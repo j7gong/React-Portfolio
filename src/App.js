@@ -27,10 +27,21 @@ function App() {
         setContactSelected={setContactSelected}
       ></Nav>
       <main>
+        {/* <Portfolio currentCategory={currentCategory}></Portfolio>
         <About></About>
         <ContactForm></ContactForm>
-        <Portfolio currentCategory={currentCategory}></Portfolio>
-        <Footer></Footer>
+        
+        <Footer></Footer> */}
+
+        {!contactSelected ? (
+          <>
+            <About></About>
+            <Portfolio currentCategory={currentCategory}></Portfolio>
+            <Footer></Footer>
+          </>
+        ) : (
+          <ContactForm></ContactForm>
+        )}
       </main>
     </div>
   );
