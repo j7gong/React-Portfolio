@@ -24,6 +24,18 @@ const Resume = () => {
             <button onClick={onButtonClick}>
                 Download PDF
             </button>
+            <h4>List of Proficiencies</h4>
+            <ul>
+                <li>
+                    JavaScript
+                </li>
+                <li>
+                    Node.js
+                </li>
+                <li>
+                    React
+                </li>
+            </ul>
         </center>
         </>
     );
