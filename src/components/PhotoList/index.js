@@ -43,6 +43,13 @@ const PhotoList = ({ category }) => {
           web: "https://racheldeng1995.github.io/EventHunter/",
           repo: "https://github.com/Racheldeng1995/EventHunter",
           description: 'p6 description',
+        }, 
+        {
+          name: 'Urban Portfolio',
+          category: 'Portfolio',
+          web: "https://urban-portfolio.herokuapp.com/",
+          repo: "https://github.com/Racheldeng1995/UrbanPortfolio",
+          description: 'p6 description',
         }
       ]);
 
@@ -50,7 +57,7 @@ const PhotoList = ({ category }) => {
     
     return (
         <div>
-            <div className="flex-row">
+            <div className="flex-column bg-light">
                 {currentPhotos.map((image, i) => (
                   <div className="flex-row">
                     <img
@@ -59,19 +66,20 @@ const PhotoList = ({ category }) => {
                     className="img-thumbnail mx-1"
                     key={image.name}
                     />
-      
-                  <a
+                  <div className="flex-column"> 
+                  <div>                  <a
                     className="my-5"
                     href={image.web}
                     target="_blank"
                     rel="noopener noreferrer"
-                >Deployed Application - {image.name}</a>
+                >Deployed Application - {image.name}</a></div>
+                <div>
                   <a
                     className="my-5"
                     href={image.repo}
                     target="_blank"
                     rel="noopener noreferrer"
-                  >Github Repository - {image.name}</a>
+                  >Github Repository - {image.name}</a></div></div>
                   </div>
                 ))}
 

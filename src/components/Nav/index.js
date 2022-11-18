@@ -19,7 +19,7 @@ function Nav(props) {
     //     };
 
   return (
-    <header className="flex-row px-1">
+    <header className="flex-row px-3 pt-3 pb-2">
     <h2>Jingsi Gong</h2>
     <nav>
         <ul className="flex-row">
