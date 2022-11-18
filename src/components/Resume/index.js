@@ -19,7 +19,7 @@ const Resume = () => {
     }
     return (
         <>
-        <center>
+        <center class="bg-light">
             <p>Click on below button to download my resume in PDF format</p>
             <button onClick={onButtonClick}>
                 Download PDF
